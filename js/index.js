@@ -2,29 +2,21 @@ function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
   }
 
-function sumarArray(arreglo){
-    let resultado= 0;
-    arreglo.array.forEach(element => {
-        resultado += element;
-    });
-    console.log(resultado);
+  function sumarArray(arreglo) {
+    let resultado = arreglo.reduce((a, b) => a + b, 0);
+    return resultado;
 }
 
-var a = [1,2,3,4];
-sumarArray(a);
-
 (function(){
-    const escalones = 4;
-    var salto = 2;
-    var posibilidad = [];
-    var posibilidades = [];
+    const n = 4;
+    const k = 2;
+    let escalera = [];
+    let posibilidades = [];
 
     for(var i = 0; i< n; i++){
         
         let numero = getRandomArbitrary(0, k);
-
-        
-
     }
     
 }());
+
